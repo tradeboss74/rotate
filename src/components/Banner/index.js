@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './styles.module.scss';
+import styles from './styles.module.scss';
 
 const Banner= () => {
-    return 2+2
+    return <p className={styles.container} >2+2</p>
 };
 
 export default Banner;
