@@ -6,8 +6,8 @@ import { Banner } from './components';
 
 function App() {
   return (
-    <div className="App">
-      <Banner />
+    <div className="./components">
+      < Banner />
     </div>
   );
 }

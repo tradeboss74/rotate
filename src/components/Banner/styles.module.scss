@@ -3,9 +3,45 @@
     height: 100vh;
     display: grid;
     place-items: center;
-
-    
-    background: url('https://1.bp.blogspot.com/-Me6iXuyaD3I/XYnMsXHljWI/AAAAAAAAB1s/sYJypEwEt6EXQGeUVi_lOt2GFjil1tn4gCLcBGAsYHQ/s320/superman-logo-012.png');
+    grid-auto-columns: auto;
+    grid-template-rows: 500px 20px;
+    background: blue;
     background-size: cover;
+    
+}
+.img {
+    width: 400px;
+    height: 400px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    transition: all 2s;
+
+    &.rotate90 {
+        transform: rotate(90deg);
+    }
+
+    &.rotate270 {
+        transform: rotate(360deg);
+    }   
+
+
+}
+.button1 {
+    width: 100px;
+    height: 100px;
+    
+     
+    
+}
+.button2 {
+    width: 100px;
+    height: 100px;
+      
+    
+}.button3 {
+    width: 100px;
+    height: 100px;
+       
     
 }
