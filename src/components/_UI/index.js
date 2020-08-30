@@ -1,1 +1,4 @@
-// comment
+//comments
+import Button from './Button';
+
+export { Button };

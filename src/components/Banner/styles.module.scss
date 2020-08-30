@@ -5,43 +5,62 @@
     place-items: center;
     grid-auto-columns: auto;
     grid-template-rows: 500px 20px;
-    background: blue;
+    background: rgb(16, 156, 190);
     background-size: cover;
-    
-}
-.img {
-    width: 400px;
-    height: 400px;
-    grid-column-start: 1;
-    grid-column-end: 4;
 
-    transition: all 2s;
+    & .img {
+        width: 400px;
+        height: 400px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border-radius: 100%;
+        cursor: grab;
 
-    &.rotate90 {
-        transform: rotate(90deg);
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &.rotate90 {
+            transform: rotate(90deg);
+        }
+
+        &.rotate270 {
+            transform: rotate(270deg);
+        }
     }
 
-    &.rotate270 {
-        transform: rotate(360deg);
-    }   
+    & .button1 {
+        cursor: pointer;
+        background: yellow;
 
+        &:hover {
+            background-color: rebeccapurple;
+        }
+    }
 
-}
-.button1 {
-    width: 100px;
-    height: 100px;
-    
-     
-    
-}
-.button2 {
-    width: 100px;
-    height: 100px;
-      
-    
-}.button3 {
-    width: 100px;
-    height: 100px;
-       
-    
+    & .button2 {
+        cursor: crosshair;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: none;
+
+        &:hover {
+            background-color: rebeccapurple;
+        }
+    }
+
+    & .button3 {
+        cursor: not-allowed;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: none;
+
+        &:hover {
+            background-color: rebeccapurple;
+        }
+    }
 }
